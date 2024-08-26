@@ -5,7 +5,7 @@ FROM public.ecr.aws/docker/library/python:latest
 WORKDIR /app
 
 # Copy the rest of the application code to the working directory
-COPY  /analytics/ /app
+COPY  . /app
 
 # Python dependencies
 RUN pip install -r /app/requirements.txt
